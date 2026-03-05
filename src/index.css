@@ -1,1 +1,9 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@theme {
+    --color-primary: #ff8901;
+    --color-secondary:#fb923c;
+
+    --spacing-container-padding:1rem;
+    
+};
