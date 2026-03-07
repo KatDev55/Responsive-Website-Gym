@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="container flex justify-between items-center p-8 mx-auto border-b border-gray-200">
+        <div className="container  flex justify-between items-center p-8 border-b border-gray-200 scroll-m-20">
           {/* Logo section*/}
           <div className="text-2xl flex items-center gap-2 font-semibold uppercase">
             <FaDumbbell />
@@ -41,22 +41,25 @@ const Navbar = () => {
           </div>
           {/* Icon section */}
           <div className="flex items-center gap-4">
-            <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
+            <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200 cursor-pointer">
               <CiSearch />
             </button>
 
-            <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200">
+            <button className="text-2xl hover:bg-primary hover:text-white rounded-full p-2 duration-200 cursor-pointer">
               <PiShoppingCartThin />
             </button>
-            <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary px-6 py-2 duration-200 hidden md:block">
+
+            <button className="hover:bg-primary text-primary font-semibold hover:text-white rounded-md border-2 border-primary 
+            px-6 py-2 duration-200 hidden lg:block cursor-pointer">
               Login
             </button>
-          </div>
 
           {/* Mobile hamburger Menu section */}
-          <div className="md:hidden" onClick={()=>setOpen(!open)}>
-              <MdMenu className="text-4xl"/>
+            <div className="md:hidden cursor-pointer" onClick={()=>setOpen(!open)}>
+                <MdMenu className="text-4xl"/>
+            </div>
           </div>
+
         </div>
       </nav>
 
