@@ -6,8 +6,10 @@ import Equipments from './Components/Equipments/Equipments'
 import Banner from './Components/Banner/Banner'
 import { Banner1Data, Banner2Data } from './mockData/BannerData'
 import TabComp from './Components/Tabs/TabComp'
-// import img1 from './assets/2.png'
-// import img2 from './assets/3.png'
+import Testimonials from './Components/Testimonials/Testimonials'
+import Banner2 from './Components/Banner/Banner2'
+import Footer from './Components/Footer/Footer'
+
 
 
 
@@ -30,6 +32,9 @@ const App = () => {
       <Banner {...Banner1Data}/>
       <TabComp/>
       <Banner {...Banner2Data}/>
+      <Testimonials/>
+      <Banner2/>
+      <Footer/>
     </div>
   )
 }

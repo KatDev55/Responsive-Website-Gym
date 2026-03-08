@@ -39,7 +39,7 @@ const Hero = () => {
                 <button className="primary-btn flex items-center gap-2 ">
                   Order Now
                 </button>
-                <button className="flex justify-center items-center gap-2 secondary-btn">
+                <button className="flex justify-center items-center gap-2 secondary-btn border-gray-300 border">
                   <FaPlay />
                   Watch Now
                 </button>
