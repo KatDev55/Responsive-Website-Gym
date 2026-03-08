@@ -15,7 +15,7 @@ const TabComp = () => {
     <div>
         <div className="container my-12 md:my-16">
             {/* Tabs button section */}
-            <div className="flex space-x-4 mb-4 p-6">
+            <div className="flex flex-nowrap whitespace-nowrap space-x-4 mb-4 p-6 overflow-x-auto scrollbar-hide">
                 {
                     tabs.map((tab,index)=>(
                         <button key={tab}

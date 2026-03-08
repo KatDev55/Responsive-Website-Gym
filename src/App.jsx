@@ -23,7 +23,7 @@ const bgStyle = {
 }
 const App = () => {
   return (
-    <div className='overflow-hidden '>
+    <div className='overflow-hidden'>
       <div style={bgStyle}>
           <Navbar/>
           <Hero/>
