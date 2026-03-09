@@ -1,21 +1,20 @@
 import React, { useMemo } from 'react'
 import { TestimonialsData } from '../../mockData/data'
 import Slider from 'react-slick'
+import { i } from 'motion/react-client'
 
 
 
 const Testimonials = () => {
-    const settings = useMemo(()=>
-    {
-        return({
+    const settings = {
         dots:true,
-        centerMode:true,
-        centerPadding:"40px",
+        // centerMode:true,
+        // centerPadding:"40px",
         arrow:false,
         infinite: true,
         speed: 500,
         slidesToScroll: 1,
-        // autoplay: true,
+        autoplay: true,
         autoplaySpeed: 2000,
         cssEase: "linear",
         pauseOnHover: true,
@@ -26,6 +25,7 @@ const Testimonials = () => {
                 breakpoint: 10000,
                 settings: {
                     slidesToShow: 3,
+                    initialSlide: 3,
                     slidesToScroll: 1,
                     infinite: true,
                 },
@@ -49,8 +49,8 @@ const Testimonials = () => {
             },
 
         ]
-    })
-},[])
+    }
+}
 
 
   return (
@@ -92,6 +92,6 @@ const Testimonials = () => {
         </div>
     </div>
   )
-}
+
 
 export default Testimonials
