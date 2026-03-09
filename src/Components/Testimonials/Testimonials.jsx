@@ -50,7 +50,7 @@ const Testimonials = () => {
 
         ]
     }
-}
+
 
 
   return (
@@ -92,6 +92,6 @@ const Testimonials = () => {
         </div>
     </div>
   )
-
+}
 
 export default Testimonials
