@@ -1,12 +1,16 @@
-import React from 'react'
+import React, { useMemo } from 'react'
 import { TestimonialsData } from '../../mockData/data'
 import Slider from 'react-slick'
 
 
 
 const Testimonials = () => {
-    const settings = {
+    const settings = useMemo(()=>
+    {
+        return({
         dots:true,
+        centerMode:true,
+        centerPadding:"40px",
         arrow:false,
         infinite: true,
         speed: 500,
@@ -18,6 +22,7 @@ const Testimonials = () => {
         pauseOnFocus: true,
         responsive: [
             {
+                // Window
                 breakpoint: 10000,
                 settings: {
                     slidesToShow: 3,
@@ -26,14 +31,16 @@ const Testimonials = () => {
                 },
             },
             {
+                // Tablet
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 1,
                     initialSlide: 2,
+                    slidesToScroll: 1,
                 },
             },
             {
+                // mobile
                 breakpoint: 640,
                 settings: {
                     slidesToShow: 1,
@@ -41,8 +48,9 @@ const Testimonials = () => {
                 },
             },
 
-        ],
-    }
+        ]
+    })
+},[])
 
 
   return (

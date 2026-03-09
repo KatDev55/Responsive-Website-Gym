@@ -20,7 +20,7 @@
     padding-left: 2rem;
     padding-right: 2rem;
 }
-
+/* @layer base */
 @layer components {
     .primary-btn{
         @apply bg-primary text-white py-3 px-6 rounded-md hover:scale-110 hover:shadow-md duration-300 cursor-pointer
